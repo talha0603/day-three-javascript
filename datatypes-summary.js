@@ -39,3 +39,30 @@ console.log(typeof Symbol);
 console.log(typeof isLoggedIn);
 console.log(typeof myFunction);
 
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
+
+// Stack(Used by Primitive Types) , Heap(Used by Non-Primitive Types)
+
+let myInstagram = "raby003"
+let newInstagram = myInstagram   // Value Is Passed
+newInstagram = "Aesthetic003"
+
+console.log(myInstagram);
+console.log(newInstagram);
+
+let userOne = {
+    email: "talha@google.com",
+    name: "Talha Makhdoom",
+    id: "1234",
+}
+
+let userTwo = userOne
+
+userTwo.email = "umer@google.com"   // calling email using object 
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
+
+
