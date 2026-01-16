@@ -1,4 +1,3 @@
-/*
 // First Number
 const marks = 1022
 console.log(marks);
@@ -21,7 +20,7 @@ console.log(newBalance.toPrecision(5));
 // proper commas to understand
 const zeros = 100000
 console.log(zeros.toLocaleString('en-In'));
-*/
+
 
 
 //-------------------------Maths---------------------------//
