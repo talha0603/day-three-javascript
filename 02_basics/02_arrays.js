@@ -38,6 +38,8 @@ console.log(Array.isArray("Talha"));                                // asking is
 console.log(Array.from("Talha"));                                   // we made array
 console.log(Array.from('0948746'));                                 // use 'from'
 console.log(Array.from({name: "Talha Makhdoom"}));                  // gives empty array [], can't convert
+console.log(Array.from([2, 4, 6]));
+
 
 
 let score1 = 100
@@ -45,4 +47,6 @@ let score2 = 200
 let score3 = 300
 let score4 = 400
 
-console.log(Array.of(score1, score2, score3, score4));             // used 'of' instead of 'from'
+console.log(Array.of(score1, score2, score3, score4));             // used 'of' instead of 'from'\
+console.log(Array(7));                                             // creates empty spaces in array
+
