@@ -1,4 +1,4 @@
-//        Immediately Invoken Function Expressions (IIFE)
+// Immediately Invoken Function Expressions (IIFE)
 // Global Scoper K Pollution Se Bachny K Lye IIFE Use Krty Han |--<<Interview>>--|
 // (Use For Function Definiton)(Use For Function Execution)
 (function lapi () {
