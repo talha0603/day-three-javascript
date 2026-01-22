@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | Selector</title>
+</head>
+<body style="background-color: black; color: white;">
+
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+    <ol class="order-list">
+
+    </ol>
+    
+</body>
+
+<script>
+    // innertHTML to append the text
+    function newLanguage (newLang) {
+        const newListElement = document.createElement('li')
+        newListElement.innerHTML = `${newLang}`
+        document.querySelector('.language').appendChild(newListElement)
+    }
+    newLanguage("Python")
+    newLanguage("Ruby")
+    newLanguage("React")
+
+    // Edit Values In Element
+    const changeSecond = document.querySelector('li:nth-child(2)')
+    console.log(changeSecond);
+    const newElementFor = document.createElement('li')                 // instead of innerHTML we created new Element and then replaced 
+    newElementFor.textContent = 'Mojo'
+    changeSecond.replaceWith(newElementFor)
+
+    // Or Edit with
+    const changeFirst = document.querySelector('li:first-child')
+    changeFirst.outerHTML = '<li>TypeScript</li>'                     // if do not close in li then it will not be a part of list item
+
+    // Remove any child
+    const removeChil = document.querySelector('li:last-child')
+    removeChil.remove()
+
+
+
+
+    // document.createTextNode() is uses to append text also (*Prefered Way For Big Projects)
+    function newOptiLanguage (newLang) {
+        const newListElement = document.createElement("li")                    // create element to add newly and store in new variable
+        const addListText = document.createTextNode(newLang)                   // create text node instead of innerHTML to add text in optimized way and pass parameter and also store in new variable
+        newListElement.appendChild(addListText)                                // append the text in newListElement also put variable of text as a parameter
+        document.querySelector(".order-list").appendChild(newListElement)      // use append to attatch in document
+    }
+    newOptiLanguage("Mango")
+    newOptiLanguage("Apple")
+    newOptiLanguage("Grapes")
+    newOptiLanguage("PineApple")
+
+    // Edit Above Ordered List. selecting particular class or id
+    const selectedList = document.querySelector('.order-list')
+    const oldList = selectedList.children[1]
+
+    const newEntry = document.createElement('li')
+    newEntry.textContent = 'Banana'
+    oldList.replaceWith(newEntry)
+
+
+    
+</script>
+
+</html>

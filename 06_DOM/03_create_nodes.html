@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | Create Nodes</title>
+</head>
+<body style="background-color: black; color: white;">
+
+    <!--
+    // document.createElement is used to create any element for document in script tag
+    // setAttribute is used to set attributic value of elemnt <div style ="backgroundColor: green;">
+    // you can also create classes and id's using createElement
+    // document.createTextNode("Name Is Talha Makhdoom") is used to put text between element, use appendChild with it
+    // div.innerText = "My Name Is Talha Makhdoom" is also used to put text between element
+    // you can also set style to any element
+    // document.body.appendChild(element you want to attach) is use to attach element to body 
+
+    -->
+    
+</body>
+
+<script>
+    // How To Create Any Eleme
+    const div = document.createElement('div')
+    console.log(div);
+    div.className = 'div-class'
+    div.id = Math.round(Math.random() * 10 + 1)
+    div.setAttribute("title", "This is div element")
+    div.style.backgroundColor = "green"
+    div.style.padding = "15px"
+    // div.innerText = "My Name Is Talha Makhdoom"                           // innerText value ko overwrite krta hai
+    const addText = document.createTextNode("Name Is Talha Makhdoom")        // you can use this method as well
+    div.appendChild(addText)
+
+    document.body.appendChild(div)                                           // attach this script to real document body
+    
+</script>
+
+</html>
