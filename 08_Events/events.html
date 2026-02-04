@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Events</title>
+</head>
+<body style="background-color: black; color: white;">
+    <div>
+        <h2>Amazing Images</h2>
+        <ul id="images">
+            <li><img id="adriana" width="200px" src="pexels-adriana-ramos.jpg" alt="Adriana Ramos"></li>
+            <li><img id="brendan" width="200px" src="pexels-brendanruehli.jpg" alt="Brendanruehli"></li>
+            <li><img id="elliot" width="200px" src="pexels-elliot-fais.jpg" alt="Elliot Fais"></li>
+            <li><img id="kevin" width="200px" src="pexels-kevin-christonar.jpg" alt="Kevin Christoner"></li>
+            <li><img id="matreding" width="200px" src="pexels-matreding.jpg" alt="Matreding"></li>
+            <li><img id="ryan" width="200px" src="pexels-ryanverances.jpg" alt="Rysnverances"></li>
+            <li><a id="google" style="color: aqua;" href="https://google.com">Google</a></li>
+        </ul>
+    </div>
+</body>
+
+<script>
+    // document.getElementById('kevin').onclick = function(){            // old causes problem
+    //     alert('Picture with name kevin clicked')
+    // }
+    // attatchEvent --> used to run these on Internet Explorer
+    // jQuery - onEventListener
+    // type, timestamp, defaultPreventd
+    // target, toElement, srcElement, currentTarget, clientX, clientY, screenX, screenY
+    // alt key, ctrlkey, shiftkey, keycode
+
+    // addEventListener is having 3rd parameter but it's false as a default so wo do not write |--<<Interview>>--|
+    // if you write true then it will be in sequence in console otherwise inner to outer 
+    // document.getElementById('images').addEventListener('click', function(e){
+    //     console.log('clicked inside this url');
+    // }, false)
+
+    // document.getElementById('kevin').addEventListener('click', function(e){
+    //     console.log('kevin clicked');
+    //     e.stopPropagation();
+    // }, false)
+
+    // document.getElementById('google').addEventListener('click', function(e){
+    //     console.log('google is clicked');
+    //     e.preventDefault();
+    //     e.stopPropagation();
+    // }, false)
+
+    document.querySelector('#images').addEventListener('click', function(e){
+        console.log(e.target.tagName);
+
+        if (e.target.tagName === 'IMG') {
+            console.log(e.target.id);
+            let parentRemove = e.target.parentNode
+            parentRemove.remove()
+        }
+        // parentRemove.parentNode.removeChild(parentRemove)
+    }, false)
+
+</script>
+
+</html>
