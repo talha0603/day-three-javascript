@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(120deg, #8e2de2, #4a00e0, #ff416c);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+
+.login-form {
+    display: block;
+    background: rgba(255, 255, 255, 0.15);
+    width: 420px;
+    padding: 25px 30px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+
+.login-form h2 {
+    color: black;
+    margin-bottom: 10px;
+}
+
+.email {
+    width: 300px;
+    padding: 12px;
+    margin: 10px;
+    border: 1px solid silver;
+    border-radius: 8px;
+}
+
+.password {
+    width: 300px;
+    padding: 12px;
+    margin: 10px;
+    border: 1px solid silver;
+    border-radius: 8px;
+}
+
+.login {
+    width: 300px;
+    color: white;
+    background-color: blue;
+    padding: 15px;
+    border: 1px none;
+    border-radius: 8px;
+    font-size: 15px;
+    margin-top: 8px;
+}
+
+.login:hover {
+    color: white;
+    background-color: black;
+    transition: 0.9s ease-out;
+}
+
+.p1 {
+    margin: 15px;
+}
+
+.p1 span {
+    color: blue;
+    cursor: pointer;
+}
+
+.span1:hover {
+    color: red;
+}
+
+
+/*----------------Signup---------------*/
+
+.signup-form {
+    display: none;
+    background: rgba(255, 255, 255, 0.15);
+    width: 420px;
+    padding: 25px 30px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+
+.signup-form h2 {
+    color: black;
+    margin-bottom: 10px;
+}
+
+.email1 {
+    width: 300px;
+    padding: 12px;
+    margin: 10px;
+    border: 1px solid silver;
+    border-radius: 8px;
+}
+
+.cr-pass {
+    width: 300px;
+    padding: 12px;
+    margin: 10px;
+    border: 1px solid silver;
+    border-radius: 8px;
+}
+
+.cn-pass {
+    width: 300px;
+    padding: 12px;
+    margin: 10px;
+    border: 1px solid silver;
+    border-radius: 8px;
+}
+
+.signup {
+    width: 300px;
+    color: white;
+    background-color: blue;
+    padding: 15px;
+    border: 1px none;
+    border-radius: 8px;
+    font-size: 15px;
+    margin-top: 8px;
+}
+
+.signup:hover {
+    color: white;
+    background-color: black;
+    transition: 0.9s ease-out;
+}
+
+.p2 {
+    margin: 15px;
+}
+
+.p2 span {
+    color: blue;
+    cursor: pointer;
+}
+
+.span2:hover {
+    color: red;
+}
