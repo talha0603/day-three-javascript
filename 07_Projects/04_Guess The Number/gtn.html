@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gtn.css">
+    <title>Guess The Number</title>
+</head>
+<body>
+    <div id="whole-div">
+        <h1>Number Guessing Game</h1>
+        <p>You can guess the number between 1 and 100</p>
+        <p>You have total of 10 attempts</p>
+        <br>
+        <form class="form">
+            <label for="putNumberField">Guess The Number</label>
+            <input type="text" name="putNumberField" id="putNumberField" class="putNumberField">
+            <input type="submit" value="Submit Guess" id="submitBtn" class="guessSubmit">
+        </form>
+
+        <div class="resultParas">
+            <!-- Section is empty and filled by .innerHTML using .js -->
+            <p>Previous Guesses: <span class="guesses"></span> </p>
+            <p>Remaining Guesses: <span class="lastResult">10</span> </p>
+            <p class="LowOrHi"></p>
+        </div>
+    </div>
+
+     <script src="gtn.js"></script>
+
+</body>
+</html>
