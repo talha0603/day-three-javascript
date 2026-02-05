@@ -1,112 +1,123 @@
-/* Reset default styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Page background */
 body {
     min-height: 100vh;
-    background: linear-gradient(135deg, green, yellow);
+    background: linear-gradient(135deg, #667eea, #fff);
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
-/* Main container */
 #whole-div {
     background: #ffffff;
     width: 420px;
-    padding: 25px 30px;
-    border-radius: 12px;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    padding: 30px 35px;
+    border-radius: 14px;
     text-align: center;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
 }
 
-/* Headings */
 #whole-div h1 {
+    font-size: 26px;
     margin-bottom: 10px;
     color: #333;
 }
 
 #whole-div p {
-    margin-bottom: 8px;
     color: #555;
+    margin: 6px 0;
+    font-size: 15px;
 }
 
-/* Form */
 .form {
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 .form label {
     display: block;
+    font-weight: 600;
     margin-bottom: 8px;
-    font-weight: bold;
-    color: #444;
+    color: #333;
 }
 
-/* Input */
 .putNumberField {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 12px;
-    border: 2px solid #ccc;
-    border-radius: 8px;
+    padding: 12px;
     font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
     outline: none;
+    margin-bottom: 15px;
 }
 
 .putNumberField:focus {
-    border-color: #6c63ff;
+    border-color: #667eea;
+    box-shadow: 0 0 6px rgba(102, 126, 234, 0.4);
 }
 
-/* Submit button */
 .guessSubmit {
     width: 100%;
-    padding: 10px;
-    background: #6c63ff;
+    padding: 12px;
+    background: blue;
     color: #fff;
     border: none;
     border-radius: 8px;
     font-size: 16px;
     cursor: pointer;
-    transition: background 0.3s;
+    transition: all 0.4s ease;
 }
 
 .guessSubmit:hover {
-    background: #554fd8;
+    background: linear-gradient(to left, black);
+    transform: translateY(-2px);
 }
 
-/* Result area */
 .resultParas {
-    margin-top: 15px;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
 }
 
 .resultParas p {
-    margin: 6px 0;
+    margin: 8px 0;
+    font-size: 15px;
+}
+
+.guesses {
     font-weight: bold;
+    color: #764ba2;
 }
 
-/* Messages */
-.LowOrHi h2 {
-    margin-top: 10px;
-    color: #c33764;
+.lastResult {
+    font-weight: bold;
+    color: #e63946;
 }
 
-/* Start new game button (created via JS) */
-.button h2 {
+.LowOrHi {
+    margin-top: 12px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.Start-Again {
     margin-top: 15px;
-    padding: 10px;
-    background: #1d2671;
+    width: 100%;
+    padding: 12px;
+    background-color: blue;
     color: white;
+    border: none;
     border-radius: 8px;
+    font-size: 16px;
     cursor: pointer;
-    transition: background 0.3s;
+    transition: background 0.6s ease, transform 0.2s ease;
 }
 
-.button h2:hover {
-    background: #141b4d;
+.Start-Again:hover {
+    background-color: black;
+    transform: scale(1.05);
 }

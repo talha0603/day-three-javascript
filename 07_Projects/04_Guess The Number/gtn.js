@@ -35,7 +35,7 @@ function validateGuesses (guess) {
         alert('Please enter a valid number less than 100')
     }
     else {
-        prevGuess.push()
+        prevGuess.push(guess)
         if (numGuess === 11) {
             displayGuesses(guess)
             displayMessage(`Game Over!  Random Number was ${randomNumber}`)
@@ -80,7 +80,7 @@ function endGame (){
     userInput.value = ''                             // value is cleaned
     userInput.setAttribute('disabled', '')
     p.classList.add('button')
-    p.innerHTML = `<h2 id="newGame">Start New Game</h2>`
+    p.innerHTML = `<h2 id="newGame" class="Start-Again">Start New Game</h2>`
     startOver.appendChild(p)
     playGame = false;
     newGame()
