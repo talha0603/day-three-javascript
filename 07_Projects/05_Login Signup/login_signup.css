@@ -37,6 +37,7 @@ body {
     margin: 10px;
     border: 1px solid silver;
     border-radius: 8px;
+    outline: none;
 }
 
 .password {
@@ -45,6 +46,7 @@ body {
     margin: 10px;
     border: 1px solid silver;
     border-radius: 8px;
+    outline: none;
 }
 
 .login {
@@ -102,6 +104,7 @@ body {
     margin: 10px;
     border: 1px solid silver;
     border-radius: 8px;
+    outline: none;
 }
 
 .cr-pass {
@@ -110,6 +113,7 @@ body {
     margin: 10px;
     border: 1px solid silver;
     border-radius: 8px;
+    outline: none;
 }
 
 .cn-pass {
@@ -118,6 +122,7 @@ body {
     margin: 10px;
     border: 1px solid silver;
     border-radius: 8px;
+    outline: none;
 }
 
 .signup {
